@@ -1,0 +1,16 @@
+{
+  "name": "agentikads",
+  "owner": {
+    "name": "AgentikAds",
+    "email": "support@agentikads.com",
+    "url": "https://agentikads.com"
+  },
+  "description": "AgentikAds plugins for Claude: manage your clients' Google Ads.",
+  "plugins": [
+    {
+      "name": "agentik-ads",
+      "source": "./",
+      "description": "Google Ads for agencies in Claude: health checks, wasted spend, client reports and a daily check, with caps, read-back and undo on every change."
+    }
+  ]
+}

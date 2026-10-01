@@ -1,0 +1,15 @@
+{
+  "name": "agentik-ads",
+  "displayName": "AgentikAds for Google Ads",
+  "version": "1.0.0",
+  "description": "Manage your clients' Google Ads in Claude: health checks, wasted spend, client reports and a daily check, through the AgentikAds connector, with caps, an emergency stop, Google read-back and undo on every change.",
+  "author": {
+    "name": "AgentikAds",
+    "email": "support@agentikads.com",
+    "url": "https://agentikads.com"
+  },
+  "homepage": "https://agentikads.com/docs/claude",
+  "repository": "https://github.com/jamesmoskva/agentikads-claude-plugin",
+  "license": "MIT",
+  "keywords": ["google-ads", "ppc", "advertising", "agency", "marketing", "reporting"]
+}

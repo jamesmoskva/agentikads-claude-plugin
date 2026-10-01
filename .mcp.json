@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agentikads": {
+      "type": "http",
+      "url": "https://agentikads.com/mcp/google_ads/"
+    }
+  }
+}
