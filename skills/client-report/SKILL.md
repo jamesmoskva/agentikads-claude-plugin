@@ -7,6 +7,12 @@ description: Write a Google Ads performance report for a client (weekly or month
 
 A report a client can read in two minutes: what happened, why, and what is next. Plain English, real numbers, no jargon.
 
+## A report to send the client
+
+When the user wants something to send or forward (an email, a PDF, a monthly update), use `create_client_report`: it writes the owner-friendly report from Google's own figures, with the agency's name and logo, and returns the text, a preview link and a PDF. Show the user the text or the preview link. Send it with `send_client_report` only when they say to, to the addresses they give; nothing is sent automatically. `get_client_reports` lists past ones.
+
+For a quick summary in the chat instead, gather and write it as below.
+
 ## Gather
 
 1. Pick the account or accounts with `list_ad_accounts`. For "all my clients", do each one in turn and finish with a one-line roundup per client.
