@@ -15,10 +15,10 @@ Every change made through AgentikAds is logged in the workspace's Operations his
 
 ## When a change is refused
 
-- **Emergency stop**: the user turned it on to block anything that could raise spend. Say so; they can release it in AgentikAds Settings. Cuts and pauses still work.
+- **Emergency stop**: the user turned it on to block anything that could raise spend. Say so. Cuts and pauses still work. Release it with `set_kill_switch` only when the user asks.
 - **Change cap**: the user set a change cap (`set_daily_cap`) and this change would raise spend past it. Explain the numbers. Change it only if the user asks you to; never to get a refused change through. A change cap does not stop Google spending: when the user wants a real limit, that is `set_spend_guard`.
 - **Free plan limit**: the message includes an upgrade link and the reset date. Pass both on. Looking at the account still works.
-- **Account switched off**: it can be switched back on in Settings, or with `start_monitoring_account`.
+- **Account switched off**: `start_monitoring_account` switches it back on. Pausing still works while it is off. At the plan's client limit, `stop_monitoring_account` frees a slot by switching another client off.
 
 ## After
 
