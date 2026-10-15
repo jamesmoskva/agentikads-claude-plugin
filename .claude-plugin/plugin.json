@@ -1,7 +1,7 @@
 {
   "name": "agentik-ads",
   "displayName": "AgentikAds for Google Ads",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Manage your clients' Google Ads in Claude: health checks, wasted spend, client reports and a daily check, through the AgentikAds connector, with caps, an emergency stop, Google read-back and undo on every change.",
   "author": {
     "name": "AgentikAds",

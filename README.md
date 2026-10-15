@@ -16,7 +16,7 @@ Full guide with more examples: https://agentikads.com/docs/claude
 - **find-wasted-spend**: finds search terms that spend without converting, separates junk from terms worth keeping, and adds negative keywords once you agree.
 - **client-report**: writes a period-on-period report for one client or all of them, in plain English a client can read.
 - **morning-check**: a report-only daily check across every client: spend spikes, conversion drops, campaigns that stopped serving. Makes no changes, so it suits a scheduled task.
-- **safe-changes**: how Claude makes changes here: confirming anything that raises spend, respecting each account's emergency stop and any daily cap the user sets, and undoing a change.
+- **safe-changes**: how Claude makes changes here: confirming anything that raises spend, respecting each account's emergency stop and any change cap the user sets, and undoing a change. Real spending limits are a spend guard (`set_spend_guard`), which alerts or pauses a client when spend reaches a daily or monthly limit.
 
 ## What data it sends
 
