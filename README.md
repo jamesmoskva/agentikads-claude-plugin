@@ -16,7 +16,7 @@ Full guide with more examples: https://agentikads.com/docs/claude
 - **find-wasted-spend**: finds search terms that spend without converting, separates junk from terms worth keeping, and adds negative keywords once you agree.
 - **client-report**: writes a period-on-period report for one client or all of them, in plain English a client can read.
 - **morning-check**: a report-only daily check across every client: spend spikes, conversion drops, campaigns that stopped serving. Makes no changes, so it suits a scheduled task.
-- **safe-changes**: how Claude makes changes here: confirming anything that raises spend, respecting each account's daily cap and emergency stop, and undoing a change.
+- **safe-changes**: how Claude makes changes here: confirming anything that raises spend, respecting each account's emergency stop and any daily cap the user sets, and undoing a change.
 
 ## What data it sends
 
@@ -24,7 +24,7 @@ The skills are instructions for Claude and send nothing themselves. The connecto
 
 ## Plans
 
-Free for 5 client accounts and 300 changes a month, no card; looking is always free. Paid plans are priced by client accounts with unlimited changes. See https://agentikads.com/#pricing
+Free for 5 client accounts and 300 changes a month, no card; looking, pausing and undoing are always free. Paid plans are priced by client accounts with unlimited changes. See https://agentikads.com/#pricing
 
 ## Support
 

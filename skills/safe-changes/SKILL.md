@@ -15,7 +15,8 @@ Every change made through AgentikAds is logged in the workspace's Operations his
 
 ## When a change is refused
 
-- **Daily cap or emergency stop**: the account's limits blocked it. Explain the limit and that the user can change it in AgentikAds Settings. Don't look for a way around it.
+- **Emergency stop**: the user turned it on to block anything that could raise spend. Say so; they can release it in AgentikAds Settings. Cuts and pauses still work.
+- **Daily cap**: the user set a cap and this change would go past it. Explain the numbers. Change the cap with `set_daily_cap` only if the user asks you to; never to get a refused change through.
 - **Free plan limit**: the message includes an upgrade link and the reset date. Pass both on. Looking at the account still works.
 - **Account switched off**: it can be switched back on in Settings, or with `start_monitoring_account`.
 
@@ -27,5 +28,5 @@ Every change made through AgentikAds is logged in the workspace's Operations his
 ## Undo
 
 - `get_change_history` lists recent changes with `undoable` and `undone`. Pass the change's `id` to `undo_change`.
-- Undo covers pausing and enabling, negative keywords, bids, budgets, schedules and ad copy edits. It is free, even past the free plan's monthly limit, and putting something back that would raise spend still respects the account's limits.
+- Undo covers pausing and enabling (including `pause_all_campaigns`), negative keywords, bids, budgets, schedules, ad copy edits, linking and unlinking assets, and business names. It is free, even past the free plan's monthly limit, and putting something back that would raise spend still respects the account's limits.
 - Confirm before undoing a change someone else in the team made.
