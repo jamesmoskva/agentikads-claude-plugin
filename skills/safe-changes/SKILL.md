@@ -18,12 +18,17 @@ Every change made through AgentikAds is logged in the workspace's Operations his
 - **Emergency stop**: the user turned it on to block anything that could raise spend. Say so. Cuts and pauses still work. Release it with `set_kill_switch` only when the user asks.
 - **Change cap**: the user set a change cap (`set_daily_cap`) and this change would raise spend past it. Explain the numbers. Change it only if the user asks you to; never to get a refused change through. A change cap does not stop Google spending: when the user wants a real limit, that is `set_spend_guard`.
 - **Free plan limit**: the message includes an upgrade link and the reset date. Pass both on. Looking at the account still works.
+- **Removes leads**: pausing a keyword, ad or ad group, adding negatives or cutting hours from a schedule is checked against the last 90 days. When it would remove leads that cost no more than the account's goal (`set_account_goal`) or the campaign's own cost per lead, or remove leads on too little data, it is refused with the figures. Put them to the user ("saves £120 a month, removes about 4 leads a month at £30 each"), and only if they still want it, call again with `confirm_volume_loss`. Pausing a whole campaign or client is never held back.
 - **Account switched off**: `start_monitoring_account` switches it back on. Pausing still works while it is off. At the plan's client limit, `stop_monitoring_account` frees a slot by switching another client off.
 
 ## After
 
 - Report what Google read back (the `persisted` values), not what was asked for. If a result says it was not applied, say so and give the reason.
 - If a result carries `plan_notice`, mention it once.
+
+## Did it work?
+
+- `get_change_impact` shows leads and cost per lead in the 14 days before and after each day's changes. When a change was followed by fewer leads (`cut_leads`), say so, and offer `undo_change` if the change is `undoable`. Other things move at the same time, so present it as a likely cause, not proof.
 
 ## Undo
 

@@ -20,6 +20,7 @@ Look at yesterday for every client, compare it with the last 30 days, and report
 - **Cost per conversion jumped**: more than 30% above the 30-day average, with enough conversions to mean it.
 - **Campaign stopped serving**: an enabled campaign with zero impressions all day.
 - **Budget-limited**: a converting campaign spending its whole budget early.
+- **Shrinking**: once a week, `get_volume_trend`. Report any "Shrinking, not optimising" alert with its figures.
 
 ## Report
 
